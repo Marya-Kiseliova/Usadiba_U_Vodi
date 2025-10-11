@@ -3,31 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Усадьба У Воды</title>
-       <meta name="description" content="Усадьба У Воды - отдых на озере недалеко от Бреста и Малориты. Снять домик рядом с Брестом. 
-    Уютные домики, квадроциклы, рыбалка, баня. Забронируйте отдых для семьи и друзей!">
+    <title>Усадьба У Воды - Отдых на природе недалеко от Бреста</title>
     
-    <meta name="keywords" content="снять дом, аренда дома на сутки, Олтуш, Малорита,  Малоритский район, отдых на природе, Брест, озеро, квадроциклы, агроусадьба
-    рыбалка, аренда домиков, баня, выходные на природе">
+    <!-- Основное SEO -->
+    <meta name="description" content="Усадьба У Воды - агроусадьба в Малоритском районе в 50 км от Бреста. Отдых на Олтушском озере, аренда домиков, квадроциклы, рыбалка.">
+    <meta name="keywords" content="агроусадьба, Брестская область, Малорита, отдых на озере, аренда домика">
     
-    <!-- Для соцсетей -->
+    <!-- GEO-метатеги -->
+    <meta name="geo.region" content="BY-BR">
+    <meta name="geo.placename" content="Малорита, Брестская область">
+    <meta name="geo.position" content="51.695607;23.970933">
+    <meta name="ICBM" content="51.695607, 23.970933">
+    
+    <!-- Open Graph для соцсетей -->
     <meta property="og:title" content="Усадьба У Воды - Отдых на природе">
     <meta property="og:description" content="Территория для спокойного отдыха и встреч с близкими">
     <meta property="og:image" content="https://твой-сайт.by/images/og-image.jpg">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://твой-сайт.by">
     
-    <!-- Для поиска по региону -->
-    <meta name="geo.region" content="BY-MI">
-    <meta name="geo.placename" content="Брестская область,Олтуш">
-    <!-- Font Awesome для иконок -->
+    <!-- Внешние CSS библиотеки -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts: Open Sans (текст), Playfair Display (заголовки) -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <!-- SimpleLightbox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.1/simple-lightbox.min.css">
-    <style>
+    
+    <!-- JSON-LD схема -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Hotel",
+        "name": "Усадьба У Воды - агроусадьба в Малоритском районе",
+        "description": "Агроусадьба у Олтушского озера недалеко от Бреста",
+        "url": "https://твой-сайт.by",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BY",
+            "addressRegion": "Брестская область",
+            "addressLocality": "Малорита"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 51.695607,
+            "longitude": 23.970933
+        },
+        "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "Квадроциклы"},
+            {"@type": "LocationFeatureSpecification", "name": "Рыбалка"},
+            {"@type": "LocationFeatureSpecification", "name": "Баня"}
+        ],
+        "telephone": "+375292272281"
+    }
+    </script>
+
+</head>
+    
         :root {
             --primary-color: #06520a;
             --light-color: #FAF9F6;
