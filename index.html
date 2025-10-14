@@ -128,33 +128,33 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
         
-        .contacts {
+        /* Стили для контактов в ШАПКЕ */
+        .header .contacts {
             display: flex;
             align-items: center;
             gap: 12px;
             flex-wrap: wrap;
             justify-content: flex-end;
         }
-        
-        .contacts span {
+
+        .header .contacts span {
             font-size: 16px;
             font-weight: 600;
             white-space: nowrap;
         }
-        
-        .contacts a {
+
+        .header .contacts a {
             color: #054005;
             font-size: 20px;
             text-decoration: none;
             transition: all 0.3s ease;
             padding: 5px;
         }
-        
-        .contacts a:hover {
+
+        .header .contacts a:hover {
             opacity: 0.7;
             transform: scale(1.1);
         }
-        
         .hero-content {
             max-width: 800px;
             margin-top: 40px;
@@ -352,8 +352,105 @@
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-        
-        .minimal-footer {
+        .booking {
+            background: linear-gradient(135deg, #f8fff8 0%, #ffffff 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #e0f2e0;
+            border-bottom: 1px solid #e0f2e0;
+        }
+
+        .booking-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .booking h2 {
+            color: var(--primary-color);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .booking-subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+                }
+        .booking .contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 300px;
+            margin: 0 auto 30px;
+        }
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 20px;
+            background: white;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+        }
+
+        .contact-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .phone-link:hover {
+            border-color: #06520a;
+            color: #06520a;
+        }
+
+        .viber-link:hover {
+            border-color: #7360f2;
+            color: #7360f2;
+        }
+
+        .telegram-link:hover {
+            border-color: #0088cc;
+            color: #0088cc;
+        }
+
+        .contact-link i {
+            font-size: 24px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .booking-note {
+            color: #666;
+            font-size: 16px;
+            font-style: italic;
+        }
+        .yandex-link:hover {
+        border-color: #ff0000; /* Красный цвет Яндекс при наведении */
+        color: #ff0000;
+        }
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .booking {
+                padding: 40px 15px;
+            }
+            
+            .booking h2 {
+                font-size: 28px;
+            }
+            
+            .contact-link {
+                padding: 12px 15px;
+                font-size: 16px;
+            }
+        }
+
+                .minimal-footer {
             background: linear-gradient(to bottom, var(--gradient-end), var(--gradient-start));
             padding: 40px 20px;
             text-align: center;
@@ -388,186 +485,201 @@
         }
         
         /* Адаптивность */
-        @media (max-width: 992px) {
-            .service-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .hero-title {
-                font-size: 42px;
-            }
-            
-            .hero-subtitle {
-                font-size: 22px;
-            }
-            
-            .logo {
-                width: 120px;
-            }
-            
-            .contacts span {
-                font-size: 14px;
-            }
-            
-            .contacts a {
-                font-size: 18px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hero {
-                min-height: 50vh;
-                padding: 90px 15px 50px;
-            }
-            
-            .header {
-                padding: 12px 15px;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-            
-            .logo {
-                width: 100px;
-            }
-            
-            .contacts {
-                gap: 8px;
-                justify-content: center;
-                width: 100%;
-                order: 3;
-                margin-top: 10px;
-                padding-top: 10px;
-                border-top: 1px solid rgba(0, 0, 0, 0.1);
-            }
-            
-            .contacts span {
-                font-size: 14px;
-            }
-            
-            .contacts a {
-                font-size: 18px;
-            }
-            
-            .hero-content {
-                margin-top: 20px;
-            }
-            
-            .hero-title { 
-                font-size: 32px; 
-                margin-bottom: 10px;
-            }
-            
-            .hero-subtitle { 
-                font-size: 18px; 
-                margin-bottom: 15px;
-            }
-            
-            .hero-desc { 
-                font-size: 16px; 
-            }
-            
-            .slider-container {
-                max-width: 95%;
-                height: 400px;
-                margin: 30px auto;
-            }
-            
-            .service-grid { 
-                grid-template-columns: 1fr; 
-            }
-            
-            .swiper-container {
-                height: 250px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero {
-                min-height: 60vh;
-                padding: 80px 10px 40px;
-            }
-            
-            .header {
-                padding: 10px;
-                flex-direction: column;
-                gap: 8px;
-            }
-            
-            .logo-container {
-                order: 1;
-            }
-            
-            .contacts {
-                order: 2;
-                width: 100%;
-                margin-top: 5px;
-                padding-top: 8px;
-                justify-content: center;
-            }
-            
-            .logo {
-                width: 90px;
-            }
-            
-            .contacts span {
-                font-size: 12px;
-            }
-            
-            .contacts a {
-                font-size: 16px;
-            }
-            
-            .hero-title { 
-                font-size: 28px; 
-            }
-            
-            .hero-subtitle { 
-                font-size: 16px; 
-            }
-            
-            .hero-desc {
-                font-size: 14px;
-            }
-            
-            .slider-container {
-                height: 300px;
-            }
-            
-            .services h2, .map-section h2 {
-                font-size: 28px;
-            }
-        }
-        
-        @media (max-width: 360px) {
-            .hero {
-                padding: 70px 8px 30px;
-            }
-            
-            .contacts {
-                gap: 5px;
-            }
-            
-            .contacts span {
-                font-size: 11px;
-            }
-            
-            .contacts a {
-                font-size: 15px;
-            }
-            
-            .hero-title {
-                font-size: 24px;
-            }
-            
-            .hero-subtitle {
-                font-size: 15px;
-            }
-        }
+        /* Адаптивность для ШАПКИ */
+@media (max-width: 992px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-title {
+        font-size: 42px;
+    }
+    
+    .hero-subtitle {
+        font-size: 22px;
+    }
+    
+    .logo {
+        width: 120px;
+    }
+    
+    .header .contacts span {
+        font-size: 14px;  /* ← ДОБАВЬ .header */
+    }
+    
+    .header .contacts a {
+        font-size: 18px;  /* ← ДОБАВЬ .header */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 50vh;
+        padding: 90px 15px 50px;
+    }
+    
+    .header {
+        padding: 12px 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .logo {
+        width: 100px;
+    }
+    
+    .header .contacts {  /* ← ДОБАВЬ .header */
+        gap: 8px;
+        justify-content: center;
+        width: 100%;
+        order: 3;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .header .contacts span {  /* ← ДОБАВЬ .header */
+        font-size: 14px;
+    }
+    
+    .header .contacts a {  /* ← ДОБАВЬ .header */
+        font-size: 18px;
+    }
+    
+    .hero-content {
+        margin-top: 20px;
+    }
+    
+    .hero-title { 
+        font-size: 32px; 
+        margin-bottom: 10px;
+    }
+    
+    .hero-subtitle { 
+        font-size: 18px; 
+        margin-bottom: 15px;
+        padding: 0 15px;
+        word-wrap: break-word;
+        line-height: 1.4;
+    }
+    
+    .hero-desc { 
+        font-size: 16px; 
+        padding: 0 15px;
+        line-height: 1.5;
+    }
+    
+    .slider-container {
+        max-width: 95%;
+        height: 400px;
+        margin: 30px auto;
+    }
+    
+    .service-grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .swiper-container {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-subtitle {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .hero {
+        min-height: 60vh;
+        padding: 80px 10px 40px;
+    }
+    
+    .header {
+        padding: 10px;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .logo-container {
+        order: 1;
+    }
+    
+    .header .contacts {  /* ← ДОБАВЬ .header */
+        order: 2;
+        width: 100%;
+        margin-top: 5px;
+        padding-top: 8px;
+        justify-content: center;
+    }
+    
+    .logo {
+        width: 90px;
+    }
+    
+    .header .contacts span {  /* ← ДОБАВЬ .header */
+        font-size: 12px;
+    }
+    
+    .header .contacts a {  /* ← ДОБАВЬ .header */
+        font-size: 16px;
+    }
+    
+    .hero-title { 
+        font-size: 28px; 
+    }
+    
+    .hero-subtitle { 
+        font-size: 16px; 
+    }
+    
+    .hero-desc {
+        font-size: 14px;
+    }
+    
+    .slider-container {
+        height: 300px;
+    }
+    
+    .services h2, .map-section h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero {
+        padding: 70px 8px 30px;
+    }
+    
+    .header .contacts {  /* ← ДОБАВЬ .header */
+        gap: 5px;
+    }
+    
+    .header .contacts span {  /* ← ДОБАВЬ .header */
+        font-size: 11px;
+    }
+    
+    .header .contacts a {  /* ← ДОБАВЬ .header */
+        font-size: 15px;
+    }
+    
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .hero-subtitle {
+        font-size: 15px;
+    }
+}
     </style>
 </head>
 <body>
-    <body>
-    <!-- ОБНОВЛЕННАЯ ШАПКА -->
+        <!-- ОБНОВЛЕННАЯ ШАПКА -->
     <section class="hero">
         <div class="header">
             <div class="logo-container">
@@ -726,10 +838,38 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.123!2d23.970933!3d51.695607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDQxJy44Ik4gMjPCsDU4JzIzLjgyIkU!5e0!3m2!1sru!2sby!4v1725148800000!5m2!1sru!2sby" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     
+    <section class="booking">
+        <div class="booking-container">
+            <h2>Забронировать отдых</h2>
+            <p class="booking-subtitle">Свяжитесь с нами удобным способом</p>
+            
+            <div class="contacts">
+                <a href="tel:+375292272281" class="contact-link phone-link">
+                    <i class="fas fa-phone"></i>
+                    <span>+375 (29) 227-22-81</span>
+                </a>
+                
+                <a href="viber://chat?number=%2B375292272281" class="contact-link viber-link">
+                    <i class="fab fa-viber"></i>
+                    <span>Написать в Viber</span>
+                </a>
+                                <a href="https://t.me/твой_username" class="contact-link telegram-link">
+                    <i class="fab fa-telegram-plane"></i>
+                    <span>Написать в Telegram</span>
+                </a>
+               <a href="https://yandex.by/maps/org/usadba_u_vody/11681717306/reviews/?ll=23.970933%2C51.695607&z=16" title="Отзывы о нас" class="contact-link yandex-link">
+                <i class="fab fa-yandex"></i> <!-- Иконка Яндекс -->
+                <span>Отзывы о нас</span>
+               </a>
+            </div>
+            
+            <p class="booking-note">⏰ Ответим в течение 15 минут!</p>
+        </div>
+    </section>
     <div class="minimal-footer">
-        Оплата наличными и картой. © 2025 Усадьба У Воды
+         © 2025 Усадьба У Воды
         <div class="footer-contacts">
-            <span>Связаться с нами:</span>
+        
             <a href="viber://chat?number=%2B375292272281" title="Viber"><i class="fab fa-viber"></i></a>
             <a href="tg://resolve?domain=[твой_username]" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
             <a href="tel:+375292272281" title="Телефон"><i class="fas fa-phone"></i></a>
