@@ -440,21 +440,10 @@
         border-color: #ff0000; /* Красный цвет Яндекс при наведении */
         color: #ff0000;
         }
-        .google-link:hover {
+     .google-link:hover {
     border-color: #4285F4;
     color: #4285F4;
     background-color: #f8f9ff;
-    .contact-link {
-    /* существующие стили */
-    min-height: 60px;     /* Фиксируем высоту */
-    text-align: left;     /* Выравниваем текст по левому краю */
-    justify-content: flex-start; /* Иконки и текст слева */
-}
-
-.contact-link span {
-    flex-grow: 1;         /* Текст занимает всё доступное пространство */
-    text-align: center;   /* Текст по центру внутри своего блока */
-}
 }
         /* Адаптивность */
         @media (max-width: 768px) {
@@ -865,41 +854,46 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>    </section>
     
-    <section class="booking">
-        <div class="booking-container">
-            <h2>Забронировать отдых</h2>
-            <p class="booking-subtitle">Свяжитесь с нами удобным способом</p>
+  <section class="booking">
+    <div class="booking-container">
+        <h2>Забронировать отдых</h2>
+        <p class="booking-subtitle">Свяжитесь с нами удобным способом</p>
+        
+        <div class="contacts">
+            <a href="tel:+375292272281" class="contact-link phone-link">
+                <i class="fas fa-phone"></i>
+                <span>+375 (29) 227-22-81</span>
+            </a>
             
-            <div class="contacts">
-                <a href="tel:+375292272281" class="contact-link phone-link">
-                    <i class="fas fa-phone"></i>
-                    <span>+375 (29) 227-22-81</span>
-                </a>
-                
-                <a href="viber://chat?number=%2B375292272281" class="contact-link viber-link">
-                    <i class="fab fa-viber"></i>
-                    <span>Написать в Viber</span>
-                </a>
-                                <a href="https://t.me/твой_username" class="contact-link telegram-link">
-                    <i class="fab fa-telegram-plane"></i>
-                    <span>Написать в Telegram</span>
-                </a>
-               <a href="https://yandex.by/maps/org/usadba_u_vody/11681717306/reviews/?ll=23.970933%2C51.695607&z=16" title="Отзывы о нас" class="contact-link yandex-link">
-                <i class="fab fa-yandex"></i> <!-- Иконка Яндекс -->
-                <span>Отзывы о нас</span>
-               </a>
-            </div>
-              <a href="https://www.google.com/maps/place/Усадьба+У+Воды/@51.695607,23.970933,17z/data=!3m1!4b1!4m6!3m5!1s0x4721007c6d2970ab:0x1d33d600114d5d8f!8m2!3d51.695607!4d23.970933!16s%2Fg%2F11v0v9x7_9?entry=ttu" 
-   title="Наши отзывы на Google Картах" 
-   class="contact-link google-link"
-   target="_blank">
-    <i class="fab fa-google"></i>
-    <span>Наши отзывы на Google</span>
-</a>
-            </div>
-            <p class="booking-note">⏰ Ответим в течение 15 минут!</p>
-        </div>
-    </section>
+            <a href="viber://chat?number=%2B375292272281" class="contact-link viber-link">
+                <i class="fab fa-viber"></i>
+                <span>Написать в Viber</span>
+            </a>
+            
+            <a href="https://t.me/твой_username" class="contact-link telegram-link">
+                <i class="fab fa-telegram-plane"></i>
+                <span>Написать в Telegram</span>
+            </a>
+            
+            <a href="https://yandex.by/maps/org/usadba_u_vody/11681717306/reviews/?ll=23.970933%2C51.695607&z=16" 
+               title="Отзывы о нас" 
+               class="contact-link yandex-link">
+                <i class="fab fa-yandex"></i>
+                <span>Отзывы на Яндекс</span>
+            </a>
+            
+            <a href="https://www.google.com/maps/place/Усадьба+У+Воды/@51.695607,23.970933,17z/data=!3m1!4b1!4m6!3m5!1s0x4721007c6d2970ab:0x1d33d600114d5d8f!8m2!3d51.695607!4d23.970933!16s%2Fg%2F11v0v9x7_9?entry=ttu" 
+               title="Наши отзывы на Google Картах" 
+               class="contact-link google-link"
+               target="_blank">
+                <i class="fab fa-google"></i>
+                <span>Отзывы на Google</span>
+            </a>
+        </div> <!-- ЗАКРЫТИЕ contacts -->
+        
+        <p class="booking-note">⏰ Ответим в течение 15 минут!</p>
+    </div>
+</section>
     <div class="minimal-footer">
          © 2025 Усадьба У Воды
         <div class="footer-contacts">
