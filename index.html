@@ -444,6 +444,17 @@
     border-color: #4285F4;
     color: #4285F4;
     background-color: #f8f9ff;
+    .contact-link {
+    /* существующие стили */
+    min-height: 60px;     /* Фиксируем высоту */
+    text-align: left;     /* Выравниваем текст по левому краю */
+    justify-content: flex-start; /* Иконки и текст слева */
+}
+
+.contact-link span {
+    flex-grow: 1;         /* Текст занимает всё доступное пространство */
+    text-align: center;   /* Текст по центру внутри своего блока */
+}
 }
         /* Адаптивность */
         @media (max-width: 768px) {
