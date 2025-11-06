@@ -4,43 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Усадьба У Воды - Отдых на природе недалеко от Бреста</title>
-    
+    <link rel="canonical" href="https://usadibauvodi.by/" />
     <!-- Основное SEO -->
     <meta name="description" content="Усадьба У Воды - агроусадьба в Малоритском районе в 50 км от Бреста. Отдых на Олтушском озере, аренда домиков, квадроциклы, рыбалка.">
-    <meta name="keywords" content="агроусадьба, Брестская область, Малорита, Олтуш, отдых на озере, аренда дома">
+    <meta name="keywords" content="агроусадьба, Брестская область, Малорита, Олтуш, отдых на озере, аренда дома, туризм в Беларуси">
     
     <!-- GEO-метатеги -->
     <meta name="geo.region" content="BY-BR">
     <meta name="geo.placename" content="Олтуш, Брестская область">
     <meta name="geo.position" content="51.695607, 23.970933">
     <meta name="ICBM" content="51.695607, 23.970933">
-    
+
+   <!-- Дополнительные meta-теги -->
+    <meta name="language" content="ru">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=yes">
+
+    <!-- Верификация Яндекс -->
+    <meta name="yandex-verification" content="49b51381b1c83863" />
+    <!--Верификация Гугл-->
+    <meta name="google-site-verification" content="RKjC06XwazyUtIEiQwSwBT3pcyaWXBTD-ndbjilOD18" />
+
     <!-- Open Graph для соцсетей -->
-    <meta property="og:title" content="Усадьба У Воды - Отдых на природе">
-    <meta property="og:description" content="Аренда домиков у озера для отдыха и встреч с близкими">
-    <meta property="og:image" content="https://твой-сайт.by/images/og-image.jpg">
+    <meta property="og:title" content="Усадьба У Воды - Отдых на природе недалеко от Бреста">
+    <meta property="og:description" content="Агроусадьба у озера в Олтуше. Аренда домиков, квадроциклы, рыбалка, баня. Отдых на природе в 50 км от Бреста">
+    <meta property="og:image" content="https://usadibauvodi.by/Logo.jpg">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://твой-сайт.by">
-    
+    <meta property="og:url" content="https://usadibauvodi.by">
+    <meta property="og:site_name" content="Усадьба У Воды">
+
+    <!-- Для Telegram/WhatsApp/Viber -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Усадьба У Воды - Отдых на природе недалеко от Бреста">
+    <meta property="twitter:description" content="Агроусадьба у озера в Олтуше. Аренда домиков, отдых на природе">
+    <meta property="twitter:image" content="https://usadibauvodi.by/Logo.jpg">
+        
     <!-- Внешние CSS библиотеки -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.1/simple-lightbox.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     
-    <!-- JSON-LD схема (ИСПРАВЛЕННАЯ) -->
+    
+    <!-- JSON-LD схема  -->
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Hotel",
         "name": "Усадьба У Воды",
         "description": "Агроусадьба у озера, снять домик в Малоритском районе, снять дом рядом с Брестом",
-        "url": "https://твой-сайт.by",
+        "url": "https://usadibauvodi.by",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Октябрьский пер., 9Б",
             "addressCountry": "BY",
             "addressRegion": "Брестская область",
-            "addressLocality": "Олтуш, Малорита"
+            "addressLocality": "Олтуш, Малоритский район"
         },
         "geo": {
             "@type": "GeoCoordinates",
@@ -65,150 +90,249 @@
     }
     </script>
 
+
     <style>
         :root {
-            --primary-color: #06520a;
-            --light-color: #FAF9F6;
-            --gradient-start: #e0f2f1;
-            --gradient-end: #ffffff;
+            --primary: #06520a;
+            --primary-light: #0a7a10;
+            --secondary: #8B4513;
+            --accent: #D4AF37;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #e9ecef;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.12);
+            --radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
-        body {
+                
+        * {
             margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            background-color: var(--light-color);
-            color: #333;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
             line-height: 1.6;
+            overflow-x: hidden;
         }
         
-        h1, h2, .hero-title {
+        h1, h2, h3, .hero-title {
             font-family: 'Playfair Display', serif;
+            font-weight: 600;
         }
         
-        /* ===== ИСПРАВЛЕННАЯ ШАПКА С АДАПТИВНОСТЬЮ ===== */
-        .hero {
-            position: relative;
-            width: 100%;
-            min-height: 40vh;
-            background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #333;
-            padding: 100px 20px 60px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        
+
+        /* ===== СОВРЕМЕННАЯ ШАПКА ===== */
         .header {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            padding: 10px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 5%;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 100;
         }
-        
+@media (max-width: 768px) {
+    .header {
+        position: relative; /* Убираем фиксированное позиционирование */
+        background: white; /* Делаем полностью белый фон */
+        backdrop-filter: none; /* Убираем размытие */
+    }
+    
+    /* КОРРЕКТИРУЕМ отступ для героя */
+    .hero {
+        padding: 60px 20px 80px; /* Уменьшаем верхний отступ */
+        margin-top: 0; /* Убираем отступ */
+    }
+}
         .logo-container {
             display: flex;
             align-items: center;
+            gap: 15px;
         }
         
         .logo {
-            width: 170px;
-            height: auto;
+            width: 120px;
+            height: 80px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid rgba(255, 255, 255, 0.8);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            border: 3px solid white;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
         }
-        
-        /* Стили для контактов в ШАПКЕ */
-        .header .contacts {
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-text {
             display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            justify-content: flex-end;
+            flex-direction: column;
         }
 
-        .header .contacts span {
-            font-size: 16px;
+        .logo-title {
+            font-size: 1.1rem;
             font-weight: 600;
-            white-space: nowrap;
-        }
-
-        .header .contacts a {
-            color: #054005;
-            font-size: 20px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            padding: 5px;
-        }
-
-        .header .contacts a:hover {
-            opacity: 0.7;
-            transform: scale(1.1);
-        }
-        .hero-content {
-            max-width: 800px;
-            margin-top: 40px;
-        }
-        
-        .hero-title {
-            font-size: 48px;
-            margin: 0 0 15px 0;
+            color: var(--primary);
             line-height: 1.2;
         }
-        
-        .hero-subtitle {
-            font-size: 24px;
-            margin: 0 0 20px 0;
-            color: #555;
+
+        .logo-subtitle {
+            font-size: 0.9rem;
+            color: var(--gray);
         }
-        
+
+        .header-contacts {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-icons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .contact-icon:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        /* ===== ГЕРОЙ СЕКЦИЯ ===== */
+        .hero {
+            position: relative;
+            min-height: 80vh;
+            background: 
+        linear-gradient(135deg, 
+            rgba(255, 255, 255, 0.3) 0%, 
+            rgba(255, 255, 255, 0.1) 100%),
+        url('lake.png') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(20, 20, 20);
+            padding: 120px 20px 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
         .hero-desc {
-            font-size: 18px;
-            margin: 0;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
             line-height: 1.6;
         }
-        
-        /* Остальные стили остаются без изменений */
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 35px;
+            background: var(--accent);
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+            background: #e6c34d;
+        }
+
+        /* ===== ГЛАВНЫЙ СЛАЙДЕР ===== */
+        .main-slider-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+
         .slider-container {
             position: relative;
-            width: 100%;
-            max-width: 70%;
-            margin: 40px auto;
-            height: 600px;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-radius: var(--radius);
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-            border-radius: 12px;
+            box-shadow: var(--shadow);
         }
-        
+
         .slider {
             position: relative;
             width: 100%;
-            height: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 500px;
         }
 
         .slider img {
             position: absolute;
-            width: auto;
-            height: auto;
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             opacity: 0;
-            transition: opacity 1s ease-in-out;
+            transition: opacity 0.8s ease-in-out;
         }
                 
         .slider img.active {
@@ -232,43 +356,37 @@
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.5);
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: var(--transition);
         }
         
         .slider-dot.active {
             background-color: white;
+            transform: scale(1.2);
         }
-        
+
+        /* ===== УСЛУГИ ===== */
         .services {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 80px 0;
+            background: var(--light);
         }
-        
-        .services h2 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 40px;
-            color: var(--primary-color);
-        }
-        
+
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
         }
         
         .service-card {
             background: white;
-            border-radius: 12px;
+            border-radius: var(--radius);
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
         }
         
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
         }
         
         .swiper-container {
@@ -295,18 +413,18 @@
             height: 100%;
             object-fit: cover;
             cursor: pointer;
-            transition: transform 0.3s;
+            transition: var(--transition);
         }
         
         .swiper-slide img:hover {
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
         
         .swiper-button-next, .swiper-button-prev {
             color: white;
-            background-color: rgba(0, 100, 0, 0.7);
-            width: 36px;
-            height: 36px;
+            background-color: rgba(6, 82, 10, 0.8);
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -319,100 +437,95 @@
         }
         
         .service-content {
-            padding: 20px;
+            padding: 25px;
         }
         
         .service-card h3 {
-            font-size: 24px;
-            color: var(--primary-color);
-            margin: 0 0 15px 0;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
         }
         
         .service-card p {
-            margin-bottom: 10px;
-            font-size: 15px;
+            color: var(--gray);
+            line-height: 1.6;
         }
-        
+
+        /* ===== КАРТА ===== */
         .map-section {
-            padding: 60px 20px;
-            text-align: center;
+            padding: 80px 0;
+            background: white;
         }
-        
-        .map-section h2 {
-            font-size: 36px;
-            margin-bottom: 30px;
-            color: var(--primary-color);
-        }
-        
-        .map-section iframe {
-            width: 100%;
+
+        .map-container {
             max-width: 1000px;
-            height: 400px;
-            border: 0;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
         }
+
         .map-iframe {
             width: 100%;
             height: 400px;
             border: 0;
-            border-radius: 8px; /* закругленные углы */
         }
+
+        /* ===== БРОНИРОВАНИЕ ===== */
         .booking {
+            padding: 80px 0;
             background: linear-gradient(135deg, #f8fff8 0%, #ffffff 100%);
-            padding: 60px 20px;
-            text-align: center;
-            border-top: 1px solid #e0f2e0;
-            border-bottom: 1px solid #e0f2e0;
         }
 
         .booking-container {
             max-width: 600px;
             margin: 0 auto;
+            text-align: center;
         }
 
         .booking h2 {
-            color: var(--primary-color);
-            font-size: 36px;
-            margin-bottom: 10px;
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
 
         .booking-subtitle {
-            color: #666;
-            font-size: 18px;
-            margin-bottom: 30px;
-                }
-        .booking .contacts {
+            color: var(--gray);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .contacts {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            max-width: 300px;
-            margin: 0 auto 30px;
+            margin-bottom: 30px;
         }
+
         .contact-link {
             display: flex;
             align-items: center;
             gap: 15px;
-            padding: 15px 20px;
+            padding: 18px 25px;
             background: white;
-            border-radius: 12px;
+            border-radius: var(--radius);
             text-decoration: none;
-            color: #333;
+            color: var(--dark);
             font-weight: 600;
-            font-size: 18px;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 1.1rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
             border: 2px solid transparent;
         }
 
         .contact-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
         }
 
         .phone-link:hover {
-            border-color: #06520a;
-            color: #06520a;
+            border-color: var(--primary);
+            color: var(--primary);
         }
 
         .viber-link:hover {
@@ -425,6 +538,16 @@
             color: #0088cc;
         }
 
+        .yandex-link:hover {
+            border-color: #ff0000;
+            color: #ff0000;
+        }
+
+        .google-link:hover {
+            border-color: #4285F4;
+            color: #4285F4;
+        }
+
         .contact-link i {
             font-size: 24px;
             width: 30px;
@@ -432,484 +555,386 @@
         }
 
         .booking-note {
-            color: #666;
-            font-size: 16px;
+            color: var(--gray);
+            font-size: 1rem;
             font-style: italic;
         }
-        .yandex-link:hover {
-        border-color: #ff0000; /* Красный цвет Яндекс при наведении */
-        color: #ff0000;
-        }
-     .google-link:hover {
-    border-color: #4285F4;
-    color: #4285F4;
-    background-color: #f8f9ff;
-}
-        /* Адаптивность */
-        @media (max-width: 768px) {
-            .booking {
-                padding: 40px 15px;
-            }
-            
-            .booking h2 {
-                font-size: 28px;
-            }
-            
-            .contact-link {
-                padding: 12px 15px;
-                font-size: 16px;
-            }
+
+        /* ===== ФУТЕР ===== */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 0 20px;
         }
 
-                .minimal-footer {
-            background: linear-gradient(to bottom, var(--gradient-end), var(--gradient-start));
-            padding: 40px 20px;
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-info h3,
+        .footer-contacts h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .footer-contacts .contact-icons {
+            justify-content: flex-start;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
             text-align: center;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
+            color: rgba(255,255,255,0.7);
         }
-        
-        .footer-contacts {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: #333;
-        }
-        
-        .footer-contacts span {
-            font-size: 18px;
-            font-weight: 600;
-        }
-        
-        .footer-contacts a {
-            color: var(--primary-color);
-            font-size: 22px;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-        
-        .footer-contacts a:hover {
-            opacity: 0.7;
-        }
-        
-        /* Адаптивность */
-        /* Адаптивность для ШАПКИ */
-@media (max-width: 992px) {
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .hero-title {
-        font-size: 42px;
-    }
-    
-    .hero-subtitle {
-        font-size: 22px;
-    }
-    
-    .logo {
-        width: 120px;
-    }
-    
-    .header .contacts span {
-        font-size: 14px;  /* ← ДОБАВЬ .header */
-    }
-    
-    .header .contacts a {
-        font-size: 18px;  /* ← ДОБАВЬ .header */
-    }
-}
 
-@media (max-width: 768px) {
-    .hero {
-        min-height: 50vh;
-        padding: 90px 15px 50px;
-    }
-    
-    .header {
-        padding: 12px 15px;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    
-    .logo {
-        width: 100px;
-    }
-    
-    .header .contacts {  /* ← ДОБАВЬ .header */
-        gap: 8px;
-        justify-content: center;
-        width: 100%;
-        order: 3;
-        margin-top: 10px;
-        padding-top: 10px;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    
-    .header .contacts span {  /* ← ДОБАВЬ .header */
-        font-size: 14px;
-    }
-    
-    .header .contacts a {  /* ← ДОБАВЬ .header */
-        font-size: 18px;
-    }
-    
-    .hero-content {
-        margin-top: 20px;
-    }
-    
-    .hero-title { 
-        font-size: 32px; 
-        margin-bottom: 10px;
-    }
-    
-    .hero-subtitle { 
-        font-size: 18px; 
-        margin-bottom: 15px;
-        padding: 0 15px;
-        word-wrap: break-word;
-        line-height: 1.4;
-    }
-    
-    .hero-desc { 
-        font-size: 16px; 
-        padding: 0 15px;
-        line-height: 1.5;
-    }
-    
-    .slider-container {
-        max-width: 95%;
-        height: 400px;
-        margin: 30px auto;
-    }
-    
-    .service-grid { 
-        grid-template-columns: 1fr; 
-    }
-    
-    .swiper-container {
-        height: 250px;
-    }
-}
+        /* ===== АДАПТИВНОСТЬ ===== */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
 
-@media (max-width: 480px) {
-    .hero-subtitle {
-        font-size: 15px;
-        padding: 0 10px;
-    }
+            .logo-container {
+                justify-content: center;
+            }
 
-    .hero-desc {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-    
-    .hero {
-        min-height: 60vh;
-        padding: 80px 10px 40px;
-    }
-    
-    .header {
-        padding: 10px;
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    .logo-container {
-        order: 1;
-    }
-    
-    .header .contacts {  /* ← ДОБАВЬ .header */
-        order: 2;
-        width: 100%;
-        margin-top: 5px;
-        padding-top: 8px;
-        justify-content: center;
-    }
-    
-    .logo {
-        width: 90px;
-    }
-    
-    .header .contacts span {  /* ← ДОБАВЬ .header */
-        font-size: 12px;
-    }
-    
-    .header .contacts a {  /* ← ДОБАВЬ .header */
-        font-size: 16px;
-    }
-    
-    .hero-title { 
-        font-size: 28px; 
-    }
-    
-    .hero-subtitle { 
-        font-size: 16px; 
-    }
-    
-    .hero-desc {
-        font-size: 14px;
-    }
-    
-    .slider-container {
-        height: 300px;
-    }
-    
-    .services h2, .map-section h2 {
-        font-size: 28px;
-    }
-}
+            .hero {
+                min-height: 70vh;
+                padding: 100px 20px 60px;
+            }
 
-@media (max-width: 360px) {
-    .hero {
-        padding: 70px 8px 30px;
-    }
-    
-    .header .contacts {  /* ← ДОБАВЬ .header */
-        gap: 5px;
-    }
-    
-    .header .contacts span {  /* ← ДОБАВЬ .header */
-        font-size: 11px;
-    }
-    
-    .header .contacts a {  /* ← ДОБАВЬ .header */
-        font-size: 15px;
-    }
-    
-    .hero-title {
-        font-size: 24px;
-    }
-    
-    .hero-subtitle {
-        font-size: 15px;
-    }
-}
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .slider {
+                height: 400px;
+            }
+
+            .contact-link {
+                padding: 15px 20px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .slider {
+                height: 300px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
-        <!-- ОБНОВЛЕННАЯ ШАПКА -->
+    <!-- СОВРЕМЕННАЯ ШАПКА -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="Logo.jpg" alt="Логотип Усадьба У Воды" class="logo">
+                    <div class="logo-text">
+                        <div class="logo-title"> Хочешь отдохнуть?</div>
+                        <div class="logo-subtitle">Встречаемся у озера!</div>
+                    </div>
+                </div>
+                
+                <div class="header-contacts">
+                    <div class="contact-icons">
+                        <a href="viber://chat?number=%2B375292272281" class="contact-icon" title="Viber">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                            <a href="https://t.me/+375292272281" class="contact-icon" title="Telegram">
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                            
+                        <a href="https://t.me/+375292272281" class="contact-icon" title="Телефон">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ГЕРОЙ СЕКЦИЯ -->
     <section class="hero">
-        <div class="header">
-            <div class="logo-container">
-                <img src="Logo.jpg" alt="Логотип Усадьба У Воды" class="logo">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Усадьба У Воды</h1>
+                <p class="hero-subtitle">Отдых на озере недалеко от Бреста</p>
+                <p class="hero-desc">Территория для спокойного отдыха и встреч с близкими. Выберите свой ритм: от утреннего кофе под пение птиц до катания на лодках и квадроциклах.</p>
+                <a href="#booking" class="cta-button">
+                    <i class="fas fa-calendar-check"></i>
+                    Забронировать отдых
+                </a>
             </div>
-            <div class="contacts">
-                <span>Связаться с нами:</span>
-                <a href="viber://chat?number=%2B375292272281" title="Viber"><i class="fab fa-viber"></i></a>
-                <a href="tg://resolve?domain=[твой_username]" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
-                <a href="https://t.me/+375292272281" title="Телефон"><i class="fas fa-phone"></i></a>
-            </div>
-        </div>
-        
-        <!-- Добавили контейнер для контента героя -->
-        <div class="hero-content">
-            <h1 class="hero-title">Усадьба У Воды</h1>
-            <p class="hero-subtitle">Отдых на озере недалеко от Бреста, в аг. Олтуш • Аренда домиков • Квадроциклы • Мангал для вкусного ужина</p>
-            <p class="hero-subtitle">В сердце природы, недалеко от города</p>
-            <p class="hero-desc">Территория для спокойного отдыха и встреч с близкими. Выберите свой ритм: от утреннего кофе под пение птиц до катания на лодках и квадрациклах.</p>
         </div>
     </section>
-    
-    <!-- Остальной код без изменений -->
-    <div class="slider-container">
-        <div class="slider">
-            <img src="party.jpg" alt="Семейный отдых" class="active">
-            <img src="kacheli.jpg" alt="Качели рядом с беседкой">
-            <img src="quadro.jpg" alt="Квадроциклы и велосипеды для активного отдыха">
-            <img src="Fishing.jpg" alt="Озеро и лодка для рыбалки">
-            <img src="meat.jpg" alt="Барбекю и отдых на природе">
-            <img src="lake.png" alt="Озеро">
+
+    <!-- ГЛАВНЫЙ СЛАЙДЕР -->
+    <section class="main-slider-section">
+        <div class="container">
+            <h2 class="section-title">Наша усадьба</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="party.jpg" alt="Семейный отдых" class="active">
+                    <img src="kacheli.jpg" alt="Качели рядом с беседкой">
+                    <img src="quadro.jpg" alt="Квадроциклы и велосипеды для активного отдыха">
+                    <img src="Fishing.jpg" alt="Озеро и лодка для рыбалки">
+                    <img src="meat.jpg" alt="Барбекю и отдых на природе">
+                    <img src="lake.png" alt="Озеро">
+                </div>
+                <div class="slider-nav">
+                    <div class="slider-dot active"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                </div>
+            </div>
         </div>
-        <div class="slider-nav">
-            <div class="slider-dot active"></div>
-            <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
-        </div>
-    </div>
-    
+    </section>
+
+    <!-- УСЛУГИ -->
     <section class="services">
-        <h2>Всё для вашего отдыха</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <div class="swiper-container">
-                    <div class="swiper swiper-priroda">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="family.jpg" class="gallery-item">
-                                    <img src="family.jpg" alt="Аренда дома со всеми удобствами">
-                                </a>
+        <div class="container">
+            <h2 class="section-title">Всё для вашего отдыха</h2>
+            <div class="service-grid">
+                <!-- Природа -->
+                <div class="service-card">
+                    <div class="swiper-container">
+                        <div class="swiper swiper-priroda">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="family.jpg" class="gallery-item">
+                                        <img src="family.jpg" alt="Аренда дома со всеми удобствами">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="lake.png" class="gallery-item">
+                                        <img src="lake.png" alt="Озеро">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="forest.png" class="gallery-item">
+                                        <img src="forest.png" alt="Лес">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="beach.jpg" class="gallery-item">
+                                        <img src="beach.jpg" alt="Отдых у озера рядом с брестом">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="lake.png" class="gallery-item">
-                                    <img src="lake.png" alt="Озеро">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="forest.png" class="gallery-item">
-                                    <img src="forest.png" alt="Лес">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="beach.jpg" class="gallery-item">
-                                    <img src="beach.jpg" alt="Отдых у озера рядом с брестом">
-                                </a>
-                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Природа</h3>
+                        <p>Тихие лесные тропинки и грибные места, свежий воздух, купание или рыбалка. Олтушское озеро ждёт вас, всего в 2 минутах ходьбы от нашей усадьбы.</p>
                     </div>
                 </div>
-                <div class="service-content">
-                    <h3>Природа</h3>
-                    <p>Тихие лесные тропинки и грибные места, свежий воздух, купиние или рыбалка. Олтушское озеро ждёт вас, всего в 2 минутах ходьбы от нашей усадьбы. А если вы что-то забыли, не страшно, ведь неподалёку продуктовый магазин.</p>
-                </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="swiper-container">
-                    <div class="swiper swiper-vnutrenniy">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="kichen2.jpg" class="gallery-item">
-                                    <img src="kichen2.jpg" alt="Интерьер 1">
-                                </a>
+                
+                <!-- Интерьер -->
+                <div class="service-card">
+                    <div class="swiper-container">
+                        <div class="swiper swiper-vnutrenniy">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="kichen2.jpg" class="gallery-item">
+                                        <img src="kichen2.jpg" alt="Интерьер 1">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="kichen1.jpg" class="gallery-item">
+                                        <img src="kichen1.jpg" alt="Интерьер 2">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="Bed.jpg" class="gallery-item">
+                                        <img src="Bed.jpg" alt="Интерьер 3">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="kitchen.png" class="gallery-item">
+                                        <img src="kitchen.png" alt="Интерьер 4">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="kichen1.jpg" class="gallery-item">
-                                    <img src="kichen1.jpg" alt="Интерьер 2">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="Bed.jpg" class="gallery-item">
-                                    <img src="Bed.jpg" alt="Интерьер 3">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="kitchen.png" class="gallery-item">
-                                    <img src="kitchen.png" alt="Интерьер 4">
-                                </a>
-                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Интерьер и уют</h3>
+                        <p>Современные гостевые домики до 6 спальных мест каждый. Оборудованная кухня, холодильник, плита, микроволновая печь и камин создадут для вас уют и комфорт.</p>
                     </div>
                 </div>
-                <div class="service-content">
-                    <h3>Интерьер и уют</h3>
-                    <p>Современные гостевые домики до 6 спальных мест каждый. Оборудованная кухня: холодильник, плита, чайник микроволновая печь и даже камин создадут для вас уют и комфорт как дома, только лучше. Ванная комната с оборудованной душевой и туалетными принадлежностями в кажддом домике</p>
-                </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="swiper-container">
-                    <div class="swiper swiper-razvlecheniya">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="quadro.jpg" class="gallery-item">
-                                    <img src="quadro.jpg" alt="Развлечения 1">
-                                </a>
+                
+                <!-- Развлечения -->
+                <div class="service-card">
+                    <div class="swiper-container">
+                        <div class="swiper swiper-razvlecheniya">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="quadro.jpg" class="gallery-item">
+                                        <img src="quadro.jpg" alt="Развлечения 1">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="bikes.jpg" class="gallery-item">
+                                        <img src="bikes.jpg" alt="Развлечения 2">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="Fishing.jpg" class="gallery-item">
+                                        <img src="Fishing.jpg" alt="Развлечения 3">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="party.jpg" class="gallery-item">
+                                        <img src="party.jpg" alt="Развлечения 4">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="bikes.jpg" class="gallery-item">
-                                    <img src="bikes.jpg" alt="Развлечения 2">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="Fishing.jpg" class="gallery-item">
-                                    <img src="Fishing.jpg" alt="Развлечения 3">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="party.jpg" class="gallery-item">
-                                    <img src="party.jpg" alt="Развлечения 4">
-                                </a>
-                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
-                </div>
-                <div class="service-content">
-                    <h3>Активный отдых</h3>
-                    <p>Для любителей активного отдыха у нас есть квадроциклы и велосипеды, а также лодка для рыбалки или романтических вечерних прогулок. Мощная колонка добавит настроения.</p>
+                    <div class="service-content">
+                        <h3>Активный отдых</h3>
+                        <p>Для любителей активного отдыха у нас есть квадроциклы и велосипеды, а также лодка для рыбалки или романтических вечерних прогулок.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- КАРТА -->
     <section class="map-section">
-        <h2>Мы на карте</h2>
-        <p>Агрогородок Олтуш, Октябрьский пер., 9"Б"</p>
-            <iframe 
-                class="map-iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.123!2d23.970933!3d51.695607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDQxJy44Ik4gMjPCsDU4JzIzLjgyIkU!5e0!3m2!1sru!2sby!4v1725148800000!5m2!1sru!2sby" 
-                allowfullscreen 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>    </section>
-    
-  <section class="booking">
-    <div class="booking-container">
-        <h2>Забронировать отдых</h2>
-        <p class="booking-subtitle">Свяжитесь с нами удобным способом</p>
-        
-        <div class="contacts">
-            <a href="tel:+375292272281" class="contact-link phone-link">
-                <i class="fas fa-phone"></i>
-                <span>+375 (29) 227-22-81</span>
-            </a>
-            
-            <a href="viber://chat?number=%2B375292272281" class="contact-link viber-link">
-                <i class="fab fa-viber"></i>
-                <span>Написать в Viber</span>
-            </a>
-            
-            <a href="https://t.me/+375292272281" class="contact-link telegram-link">
-                <i class="fab fa-telegram-plane"></i>
-                <span>Написать в Telegram</span>
-            </a>
-            
-            <a href="https://yandex.by/maps/org/usadba_u_vody/11681717306/reviews/?ll=23.970933%2C51.695607&z=16" 
-               title="Отзывы о нас" 
-               class="contact-link yandex-link">
-                <i class="fab fa-yandex"></i>
-                <span>Отзывы на Яндекс</span>
-            </a>
-            
-            <a href="https://maps.app.goo.gl/By8PmsfFezW97b2h9?g_st=ipc" 
-               title="Наши отзывы на Google Картах" 
-               class="contact-link google-link"
-               target="_blank">
-                <i class="fab fa-google"></i>
-                <span>Отзывы на Google</span>
-            </a>
-        </div> <!-- ЗАКРЫТИЕ contacts -->
-        
-        <p class="booking-note">⏰ Ответим в течение 15 минут!</p>
-    </div>
-</section>
-    <div class="minimal-footer">
-         © 2025 Усадьба У Воды
-        <div class="footer-contacts">
-        
-            <a href="viber://chat?number=%2B375292272281" title="Viber"><i class="fab fa-viber"></i></a>
-            <a href="tg://resolve?domain=[твой_username]" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
-            <a href="tel:+375292272281" title="Телефон"><i class="fas fa-phone"></i></a>
+        <div class="container">
+            <h2 class="section-title">Мы на карте</h2>
+            <div class="map-container">
+                <iframe 
+                    class="map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.123!2d23.970933!3d51.695607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDQxJy44Ik4gMjPCsDU4JzIzLjgyIkU!5e0!3m2!1sru!2sby!4v1725148800000!5m2!1sru!2sby" 
+                    allowfullscreen 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
-    </div>
-    
-    <!-- Swiper JS -->
+    </section>
+
+    <!-- БРОНИРОВАНИЕ -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking-container">
+                <h2>Забронировать отдых</h2>
+                <p class="booking-subtitle">Свяжитесь с нами удобным способом</p>
+                
+                <div class="contacts">
+                    <a href="tel:+375292272281" class="contact-link phone-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+375 (29) 227-22-81</span>
+                    </a>
+                    
+                    <a href="viber://chat?number=%2B375292272281" class="contact-link viber-link">
+                        <i class="fab fa-viber"></i>
+                        <span>Написать в Viber</span>
+                    </a>
+                    
+                    <a href="https://t.me/+375292272281" class="contact-link telegram-link">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>Написать в Telegram</span>
+                    </a>
+                    
+                    <a href="https://yandex.by/maps/org/usadba_u_vody/11681717306/reviews/?ll=23.970933%2C51.695607&z=16" 
+                       class="contact-link yandex-link">
+                        <i class="fab fa-yandex"></i>
+                        <span>Отзывы на Яндекс</span>
+                    </a>
+                    
+                    <a href="https://maps.app.goo.gl/By8PmsfFezW97b2h9?g_st=ipc" 
+                       class="contact-link google-link"
+                       target="_blank">
+                        <i class="fab fa-google"></i>
+                        <span>Отзывы на Google</span>
+                    </a>
+                </div>
+                
+                <p class="booking-note">⏰ Ответим в течение 15 минут!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Усадьба У Воды</h3>
+                    <p>ООО "УСАДЬБА У ВОДЫ"</p>
+                    <p>УНП: 290510266</p>
+                    <p>Юридический адрес: МАЛОРИТСКИЙ Р-Н, Д. ЗАМШАНЫ, УЛ. СОВЕТСКАЯ, Д. 2А</p>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <div class="contact-icons">
+                        <a href="viber://chat?number=%2B375292272281" class="contact-icon" title="Viber">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                <a href="https://t.me/+375292272281" class="contact-icon" title="Telegram">
+    <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="tel:+375292272281" class="contact-icon" title="Телефон">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Усадьба У Воды. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Внешние скрипты -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- SimpleLightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.1/simple-lightbox.min.js"></script>
-    
+
     <script>
+        // Эффект скролла для шапки
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
         // Главный слайдер
         const sliderImages = document.querySelectorAll('.slider img');
         const sliderDots = document.querySelectorAll('.slider-dot');
@@ -929,17 +954,17 @@
             showSlide(nextIndex);
         }
         
-        // Автоматическая смена слайдов каждые 5 секунд
+        // Автоматическая смена слайдов
         setInterval(nextSlide, 5000);
         
-        // Добавляем обработчики событий для точек навигации
+        // Обработчики для точек навигации
         sliderDots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 showSlide(index);
             });
         });
         
-        // Инициализация Swiper для каждой карточки
+        // Инициализация Swiper
         const swiperConfig = {
             slidesPerView: 1,
             spaceBetween: 0,
@@ -954,7 +979,7 @@
         new Swiper('.swiper-vnutrenniy', swiperConfig);
         new Swiper('.swiper-razvlecheniya', swiperConfig);
         
-        // Инициализация SimpleLightbox для галереи
+        // Инициализация галереи
         if (typeof SimpleLightbox !== 'undefined') {
             new SimpleLightbox('.gallery-item', {
                 captions: true,
@@ -964,9 +989,21 @@
                 captionPosition: 'bottom',
                 captionDelay: 250
             });
-        } else {
-            console.warn('SimpleLightbox не загружен. Галерея недоступна.');
         }
+
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
